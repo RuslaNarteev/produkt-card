@@ -1,12 +1,17 @@
 
 body {
   box-sizing: border-box;
-  font-family:  Arial,  sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top:  220px;
   margin:  0;
   padding:  0;
   color: rgba(81, 80, 118, 1);
   font-weight: normal;
+  margin-bottom: 110px;
+  background-image: url(images/Dandelions.png);
+  background-size: 790px auto;
+  background-repeat: no-repeat;
+  background-position-x: calc(100%/2 - 160px);
 }
 
 p {
@@ -19,15 +24,23 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  margin-bottom: 110px;
+  text-align: center;
   font-size:  70px;
-  color: rgba(81, 80, 118, 1);
+  line-height:  78px;
+  margin:  0;
   text-align:  center;
+  margin: 220px 0 110px 0;
 }
 
 .container {
   margin:  0 auto;
   width:  1110px;
+  max-width: 1110px;
+  margin: 0 auto;
+  background-image: url('images/Dandelions.png');
+  background-repeat: no-repeat;
+  background-size: 790px 697px;
+  padding-top: 220px;
 }
 
 h1 {
@@ -53,6 +66,8 @@ h1 {
   font-size: 12px;
   color: rgba(166, 163, 185, 1);
   margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-top:  5px;
 }
 
 .card-title {
@@ -65,6 +80,7 @@ h1 {
   font-size: 13px;
   line-height: 18px;
   margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .card-compound-text {
@@ -76,9 +92,13 @@ h1 {
 .card-compound-list {
   margin: 0;
   padding-left: 20px;
+  margin-bottom: 25px;
 }
 
-.card-compound-item {
+.card-compound-item::before {
+  content: "○";
+  position: absolute;
+  left: 0;
   margin-bottom: 5px;
   font-size: 13px;
   font-weight: normal;
@@ -87,8 +107,7 @@ h1 {
 .card-price-wrapper {
   display: flex;
   justify-content: space-between;
-  
-}
+  }
 
 .card-price-text {
   font-weight: 700;
@@ -101,4 +120,26 @@ h1 {
 
 .product-cards {
   display: flex;
+}
+
+.products-list {
+  width: 1110px;
+  list-style:  none;
+  padding:  0;
+  margin:  0;
+  margin:  0 auto;
+  display: flex;
+  flex-wrap: wrap;
+ gap: 45px;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media max-width:  {
+  
 }
